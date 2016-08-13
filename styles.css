@@ -1,0 +1,83 @@
+body{
+	background-image: url("_1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	transition: background-image 0.3s;
+}
+.overlay{
+	position: absolute;
+	top: 0;	
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-color: rgba(0,0,0,0.5);
+}
+.gallery-container{
+	position: relative;
+	padding: 1em;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 3em;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.share_links{
+	list-style: none;
+	position: absolute;
+	right: 1em;
+	top: 0;
+}
+.share_links li{
+	display: inline-block;
+}
+.share_links img{
+	width: 50px;
+}
+.main-image{
+	height: 400px;
+	background-image: url("_1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	transition: background-image 0.5s;
+}
+.images{
+	overflow: auto;
+}
+.images-container{
+	text-align: center;
+}
+.images-container .img{
+	display: inline-block;
+	cursor: pointer;
+	width: 300px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0.5em;
+	position: relative;
+	overflow: hidden;
+}
+.images-container p{
+	position: absolute;
+	background-color: rgba(255,255,255,0.5);
+	padding: 1em;
+	bottom: -100%;
+	margin: 0;
+	transition: bottom 0.4s;
+}
+.images-container .img:hover p{
+	bottom: 0;
+}
+.images-container ._1{
+	background-image: url("_1.jpg");
+}
+.images-container ._2{
+	background-image: url("_2.jpg");
+}
+.images-container ._2:hover .main-image{
+	background-image: url("_2.jpg");
+}
